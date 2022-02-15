@@ -1,0 +1,9 @@
+    let k = document.getElementById("user").value
+    console.log(k)
+    let b  = arrayOfTodos[k]
+    console.log(b)
+    const item = document.getElementById("todo-list")
+    let newObject = document.createElement("li")
+    let text = document.createTextNode(b)
+    newObject.appendChild(text)
+    item.appendChild(newObject)
